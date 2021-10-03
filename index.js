@@ -112,7 +112,7 @@ const start = async () => {
 
 			waitingUsers.push(chatID);
 			waitingCourses[chatID] = data;
-			return bot.sendMessage(chatID, `Type description of the homework for ${msg.data}!`)
+			return bot.sendMessage(chatID, `Type description of the homework starting with 'work!':\n EXAMPLE: work! Ass1 due to firday}!`)
 		})
 	} catch (error) {
 		console.log('error')
